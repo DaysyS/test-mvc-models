@@ -1,0 +1,10 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model TestModels.Models.Book
+
+<h2>Книга № @Model.Id</h2>
+@Html.DisplayForModel()
+
+<td><p><a href="/Home/EditBook/@Model.Id">Edit book</a></p></td>
